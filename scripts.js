@@ -51,33 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Contact Form Submission
-    const form = document.getElementById('contact-form');
-    const formMessage = document.getElementById('form-message');
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-
-        if (name && email && message) {
-            if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                formMessage.textContent = 'Message sent successfully!';
-                formMessage.style.color = '#c7a26b';
-                form.classList.add('submitted');
-                form.reset();
-                setTimeout(() => {
-                    formMessage.textContent = '';
-                    form.classList.remove('submitted');
-                }, 3000);
-            } else {
-                formMessage.textContent = 'Please enter a valid email.';
-                formMessage.style.color = '#e53e3e';
-            }
-        } else {
-            formMessage.textContent = 'Please fill all fields.';
-            formMessage.style.color = '#e53e3e';
-        }
+    // Back-to-Top Button
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        backToTop.style.display = scrollY > 300 ? 'block' : 'none';
+    });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
