@@ -12,8 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
     <!-- Header -->
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1000">
         <nav class="navbar">
             <div class="logo">Mega Shyam</div>
             <ul class="nav-links">
@@ -22,6 +25,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -33,7 +37,7 @@
     </header>
 
     <!-- Social Media Bar -->
-    <div class="social-bar">
+    <div class="social-bar" data-aos="fade-left" data-aos-delay="300">
         <a href="https://www.instagram.com/mega___shyam" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.twitter.com/mega_shyam24" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.github.com/megashyam24" target="_blank"><i class="fab fa-github"></i></a>
@@ -42,132 +46,183 @@
 
     <!-- Home Section -->
     <section id="home">
-        <video autoplay muted loop class="hero-video">
+        <video autoplay muted loop class="hero-video" data-parallax="true">
             <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-dark-wavy-background-323-large.mp4" type="video/mp4">
         </video>
-        <div class="hero-content">
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
             <img src="60318971-6963-45b6-aa98-18d27a70d79e.webp" alt="Mega Shyam Avatar" class="avatar">
-            <h1>Hi I'm Mega Shyam</h1>
+            <h1>Hi, I'm Mega Shyam</h1>
             <p>I'm a <span class="typed-text"></span></p>
             <div class="button-group">
-                <a href="#portfolio" class="cta-button">Explore My Work</a>
-                <a href="https://raw.githubusercontent.com/megashyam24/portfolio/main/megashyam_resume.pdf" class="cta-button" download>Download My Resume</a>
+                <a href="#portfolio" class="cta-button" data-aos="fade-up" data-aos-delay="200"><span class="button-icon fas fa-rocket"></span> Explore My Work</a>
+                <a href="https://raw.githubusercontent.com/megashyam24/portfolio/main/megashyam_resume.pdf" class="cta-button" data-aos="fade-up" data-aos-delay="300" download><span class="button-icon fas fa-rocket"></span> Download My Resume</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" data-aos="fade-up">
+    <section id="about" data-aos="slide-up" data-aos-duration="1000">
         <h2>About Me</h2>
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-up" data-aos-delay="150">
             <img src="39246541-d03d-46ab-b660-681998b7b82a.webp" alt="Mega Shyam Avatar" class="avatar">
             <p style="text-align: justify;">I'm a 20-year-old tech enthusiast skilled in developing innovative solutions. With expertise in Java, Python, Cloud Computing, and Machine Learning, I’ve built impactful projects such as an AI-powered leaf disease classifier and a smart travel recommendation app. I also built a F.R.I.E.N.D.S themed chatbot using Generative AI, gaining hands-on experience with Flask, the Google Gemini API, vector embeddings, and deployed it using AWS EC2. Certified in AWS Cloud Practitioner, Machine Learning (DeepLearning.AI), and Java Programming (Infosys Springboard), I focus on delivering user-centric, high-quality solutions that blend creativity with technical precision. I’m passionate about learning, building, and solving real-world problems through technology.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" data-aos="fade-up">
+  <section id="skills" data-aos="slide-up" data-aos-duration="1000">
         <h2>Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card">C/C++</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">MongoDB</div>
-            <div class="skill-card">Cloud Computing</div>
-            <div class="skill-card">Machine Learning</div>
-            <div class="skill-card">Generative <br>AI</div>
-            <div class="skill-card"> RAG Framework</div>
-            <div class="skill-card">Prompt Engineering</div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="100"><i class="fas fa-c"></i> C/C++ <div class="progress-bar"><div class="progress" style="width: 80%;" data-aos="fade-right" data-aos-delay="200"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="150"><i class="fab fa-java"></i> Java <div class="progress-bar"><div class="progress" style="width: 85%;" data-aos="fade-right" data-aos-delay="250"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="200"><i class="fab fa-python"></i> Python <div class="progress-bar"><div class="progress" style="width: 90%;" data-aos="fade-right" data-aos-delay="300"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="250"><i class="fas fa-database"></i> MySQL <div class="progress-bar"><div class="progress" style="width: 75%;" data-aos="fade-right" data-aos-delay="350"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="300"><i class="fas fa-database"></i> MongoDB <div class="progress-bar"><div class="progress" style="width: 70%;" data-aos="fade-right" data-aos-delay="400"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="350"><i class="fas fa-cloud"></i> Cloud Computing <div class="progress-bar"><div class="progress" style="width: 80%;" data-aos="fade-right" data-aos-delay="450"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="400"><i class="fas fa-brain"></i> Machine Learning <div class="progress-bar"><div class="progress" style="width: 85%;" data-aos="fade-right" data-aos-delay="500"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="450"><i class="fas fa-robot"></i> Generative AI <div class="progress-bar"><div class="progress" style="width: 75%;" data-aos="fade-right" data-aos-delay="550"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="500"><i class="fas fa-cogs"></i> RAG Framework <div class="progress-bar"><div class="progress" style="width: 70%;" data-aos="fade-right" data-aos-delay="600"></div></div></div>
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="550"><i class="fas fa-code"></i> Prompt Engineering <div class="progress-bar"><div class="progress" style="width: 65%;" data-aos="fade-right" data-aos-delay="650"></div></div></div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" data-aos="fade-up">
+    <section id="portfolio" data-aos="slide-up" data-aos-duration="1000">
         <h2>Projects</h2>
         <div class="project-grid">
-            <a href="https://github.com/megashyam24/Food-Delivery" class="project-card" data-aos="zoom-in">
-                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ74mlG9rrznKpBjXLzMm8VlRNXDgLZTUReqGnN3Zj8xicjE5w=s360-c-no" alt="Food Delivery System">
-                <div class="overlay">
-                    <h3>Food Delivery System</h3>
-                    <p style="text-align: justify;">Developed a Food Delivery Application System with order tracking, an interactive timeline, and efficient delivery management.</p>
-                    <p><strong>Technologies:</strong> Java, MySQL</p>
-                </div>
-            </a>
-            <a href="https://github.com/megashyam24/Leaf-disease-model" class="project-card" data-aos="zoom-in">
-                <img src="https://img.freepik.com/premium-photo/green-leaf-circuit-board-technology-sustainability-concept-generative-ai_803320-23219.jpg" alt="AI Based Fruit Leaf Disease Classifier">
-                <div class="overlay">
-                    <h3>AI Based Fruit Leaf Disease Classifier</h3>
-                    <p style="text-align: justify;">Built an AI-powered leaf disease classifier using TensorFlow, enabling accurate identification and categorization of leaf diseases through deep learning techniques.</p>
-                    <p><strong>Technologies:</strong> Python, TensorFlow, InceptionResNetV2</p>
-                </div>
-            </a>
-            <a href="https://github.com/megashyam24/publish-subscribe-system" class="project-card" data-aos="zoom-in">
-                <img src="https://repository-images.githubusercontent.com/22583004/74dd5a00-7321-11ea-9d6c-fbdf18b91e79" alt="Publish-Subscribe System">
-                <div class="overlay">
-                    <h3>Publish-Subscribe System</h3>
-                    <p style="text-align: justify;">Built an efficient Publish-Subscribe System that enables multiple users to effortlessly share and receive real-time updates based on their chosen topics.</p>
-                    <p><strong>Technologies:</strong> Java, MySQL, WebSockets</p>
-                </div>
-            </a>
-            <a href="https://github.com/megashyam24/travel-app" class="project-card" data-aos="zoom-in">
-                <img src="https://lh3.googleusercontent.com/a/ACg8ocILcz6D2Z6DsuaO43eriDQeJTkzu_Bx5CDJyIdCdZzZbC3Mr70=s360-c-no" alt="Smart Travel Web Application">
-                <div class="overlay">
-                    <h3>Smart Travel Web Application</h3>
-                    <p style="text-align: justify;">Developed a Travel Recommendation Web App with smart ML-based suggestions, trip booking, and admin management.</p>
-                    <p><strong>Technologies:</strong> MERN Stack, TF-IDF & Collaborative Filtering (Python), MongoDB Atlas, JWT, Nodemailer</p>
-                </div>
-            </a>
-            <a href="https://github.com/megashyam24/F.R.I.E.N.D.S-CHATBOT" class="project-card" data-aos="zoom-in">
+            <div class="project-card" data-aos="zoom-in-up" data-aos-delay="300">
                 <img src="https://wallpapercave.com/wp/y57Tz5Q.jpg" alt="F.R.I.E.N.D.S Themed Chatbot">
                 <div class="overlay">
-                    <h3>F.R.I.E.N.D.S Themed Chatbot</h3>
-                    <p style="text-align: justify;">Built an AI-powered Friends-themed chatbot enabling users to chat with show characters or a superfan bot. Used Retrieval-Augmented Generation (RAG) with Google Gemini API and ChromaDB for accurate, contextual replies. Deployed via Flask on AWS EC2 for a seamless and fun user experience.</p>
-                    <p><strong>Technologies:</strong> Gemini API, RAG, Pandas, SentenceTransformers (Python), ChromaDB, Flask, AWS EC2</p>
+                    <div class="project-content">
+                        <h3>F.R.I.E.N.D.S Themed Chatbot</h3>
+                        <p style="text-align: justify;">Built an AI-powered Friends-themed chatbot enabling users to chat with show characters or a superfan bot. Used Retrieval-Augmented Generation (RAG) with Google Gemini API and ChromaDB for accurate, contextual replies. Deployed via Flask on AWS EC2 for a seamless and fun user experience.</p>
+                        <p><strong>Technologies:</strong> Gemini API, RAG, Pandas, SentenceTransformers (Python), ChromaDB, Flask, AWS EC2</p>
+                    </div>
+                    <a href="https://github.com/megashyam24/F.R.I.E.N.D.S-CHATBOT" target="_blank" class="project-button"><span class="button-icon fas fa-code"></span> View Project</a>
                 </div>
-            </a>
+            </div>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-delay="250">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocILcz6D2Z6DsuaO43eriDQeJTkzu_Bx5CDJyIdCdZzZbC3Mr70=s360-c-no" alt="Smart Travel Web Application">
+                <div class="overlay">
+                    <div class="project-content">
+                        <h3>Smart Travel Web Application</h3>
+                        <p style="text-align: justify;">Developed a Travel Recommendation Web App with smart ML-based suggestions, trip booking, and admin management.</p>
+                        <p><strong>Technologies:</strong> MERN Stack, TF-IDF & Collaborative Filtering (Python), MongoDB Atlas, JWT, Nodemailer</p>
+                    </div>
+                    <a href="https://github.com/megashyam24/travel-app" target="_blank" class="project-button"><span class="button-icon fas fa-code"></span> View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-delay="100">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ74mlG9rrznKpBjXLzMm8VlRNXDgLZTUReqGnN3Zj8xicjE5w=s360-c-no" alt="Food Delivery System">
+                <div class="overlay">
+                    <div class="project-content">
+                        <h3>Food Delivery System</h3>
+                        <p style="text-align: justify;">Developed a Food Delivery Application System with order tracking, an interactive timeline, and efficient delivery management.</p>
+                        <p><strong>Technologies:</strong> Java, MySQL</p>
+                    </div>
+                    <a href="https://github.com/megashyam24/Food-Delivery" target="_blank" class="project-button"><span class="button-icon fas fa-code"></span> View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-delay="150">
+                <img src="https://img.freepik.com/premium-photo/green-leaf-circuit-board-technology-sustainability-concept-generative-ai_803320-23219.jpg" alt="AI Based Fruit Leaf Disease Classifier">
+                <div class="overlay">
+                    <div class="project-content">
+                        <h3>AI Based Fruit Leaf Disease Classifier</h3>
+                        <p style="text-align: justify;">Built an AI-powered leaf disease classifier using TensorFlow, enabling accurate identification and categorization of leaf diseases through deep learning techniques.</p>
+                        <p><strong>Technologies:</strong> Python, TensorFlow, InceptionResNetV2</p>
+                    </div>
+                    <a href="https://github.com/megashyam24/Leaf-disease-model" target="_blank" class="project-button"><span class="button-icon fas fa-code"></span> View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-delay="200">
+                <img src="https://repository-images.githubusercontent.com/22583004/74dd5a00-7321-11ea-9d6c-fbdf18b91e79" alt="Publish-Subscribe System">
+                <div class="overlay">
+                    <div class="project-content">
+                        <h3>Publish-Subscribe System</h3>
+                        <p style="text-align: justify;">Built an efficient Publish-Subscribe System that enables multiple users to effortlessly share and receive real-time updates based on their chosen topics.</p>
+                        <p><strong>Technologies:</strong> Java, MySQL, WebSockets</p>
+                    </div>
+                    <a href="https://github.com/megashyam24/publish-subscribe-system" target="_blank" class="project-button"><span class="button-icon fas fa-code"></span> View Project</a>
+                </div>
+            </div>
+            
+            
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" data-aos="fade-up">
+    <section id="certifications" data-aos="slide-up" data-aos-duration="1000">
         <h2>Certifications</h2>
         <div class="certification-grid">
-            <a href="https://www.credly.com/badges/378d1df8-139b-4a07-b440-4bedc8bda9a7/public_url" class="certification-card" data-aos="zoom-in" target="_blank">
-                <h3>AWS Certified Cloud Practitioner</h3>
-                <p>Issued by AWS</p>
-            </a>
-            <a href="https://coursera.org/share/e0491bbad3d2cbd2500b656676af8685" class="certification-card" data-aos="zoom-in" target="_blank">
-                <h3>Machine Learning</h3>
-                <p>Issued by DeepLearning.AI (Coursera)</p>
-            </a>
-            <a href="https://drive.google.com/file/d/1HSADC4qGDEB7RkGLhLI5sxemlJ8gH9F2/view" class="certification-card" data-aos="zoom-in" target="_blank">
-                <h3>Associate in IT Foundation Skills (Java)</h3>
-                <p>Issued by Infosys</p>
-            </a>
-            <a href="https://drive.google.com/file/d/1iOQ-hGfx7Gnmm0AlqdYcLeIOxmO9CCCB/view" class="certification-card" data-aos="zoom-in" target="_blank">
-                <h3>Introduction to Industry 4.0 and Industrial Internet of Things</h3>
-                <p>Issued by NPTEL</p>
-            </a>
-            <a href="https://drive.google.com/file/d/1MIX_LEEipoACaN0xmNf9CDjX-kF3xQJ-/view?usp=sharing" class="certification-card" data-aos="zoom-in" target="_blank">
-                <h3>Principles of Generative AI Certification</h3>
-                <p>Issued by Infosys</p>
-            </a>
-            <a href="https://drive.google.com/file/d/17gPkIRBe3K4TpPaRbtrIo1wuzjjqQZLx/view?usp=sharing" class="certification-card" data-aos="zoom-in" target="_blank">
-                <h3>Artificial Intelligence Primer Certification</h3>
-                <p>Issued by Infosys</p>
-            </a>
+            <div class="certification-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="certification-content">
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                    <p>Issued by AWS</p>
+                </div>
+                <a href="https://www.credly.com/badges/378d1df8-139b-4a07-b440-4bedc8bda9a7/public_url" target="_blank" class="cert-button"><span class="button-icon fas fa-certificate"></span> View Credential</a>
+            </div>
+            <div class="certification-card" data-aos="zoom-in" data-aos-delay="150">
+                <div class="certification-content">
+                    <h3>Machine Learning</h3>
+                    <p>Issued by DeepLearning.AI (Coursera)</p>
+                </div>
+                <a href="https://coursera.org/share/e0491bbad3d2cbd2500b656676af8685" target="_blank" class="cert-button"><span class="button-icon fas fa-certificate"></span> View Credential</a>
+            </div>
+            <div class="certification-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="certification-content">
+                    <h3>Associate in IT Foundation Skills (Java)</h3>
+                    <p>Issued by Infosys</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1HSADC4qGDEB7RkGLhLI5sxemlJ8gH9F2/view" target="_blank" class="cert-button"><span class="button-icon fas fa-certificate"></span> View Credential</a>
+            </div>
+            <div class="certification-card" data-aos="zoom-in" data-aos-delay="250">
+                <div class="certification-content">
+                    <h3>Introduction to Industry 4.0 and Industrial Internet of Things</h3>
+                    <p>Issued by NPTEL</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1iOQ-hGfx7Gnmm0AlqdYcLeIOxmO9CCCB/view" target="_blank" class="cert-button"><span class="button-icon fas fa-certificate"></span> View Credential</a>
+            </div>
+            <div class="certification-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="certification-content">
+                    <h3>Principles of Generative AI Certification</h3>
+                    <p>Issued by Infosys</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1MIX_LEEipoACaN0xmNf9CDjX-kF3xQJ-/view?usp=sharing" target="_blank" class="cert-button"><span class="button-icon fas fa-certificate"></span> View Credential</a>
+            </div>
+            <div class="certification-card" data-aos="zoom-in" data-aos-delay="350">
+                <div class="certification-content">
+                    <h3>Artificial Intelligence Primer Certification</h3>
+                    <p>Issued by Infosys</p>
+                </div>
+                <a href="https://drive.google.com/file/d/17gPkIRBe3K4TpPaRbtrIo1wuzjjqQZLx/view?usp=sharing" target="_blank" class="cert-button"><span class="button-icon fas fa-certificate"></span> View Credential</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" data-aos="slide-up" data-aos-duration="1000">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="experience-header">
+                    <h3>AI Team Intern (Cloud Computing)</h3>
+                    <span class="experience-icon"><i class="fas fa-cloud"></i></span>
+                </div>
+                <p><strong>Dot Com Infoway Ltd, Madurai</strong></p>
+                <p class="experience-date"><i class="fas fa-calendar-alt"></i> June 6, 2025 - July 4, 2025</p>
+                <p style="text-align: justify;">Completed an internship in the AI team, focusing on cloud computing solutions. Contributed to the development and deployment of AI-driven applications, leveraging cloud infrastructure to enhance performance and scalability.</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up">
+    <section id="contact" data-aos="slide-up" data-aos-duration="1000">
         <h2>Contact</h2>
         <div class="contact-content">
-            <div class="contact-map">
+            <div class="contact-map" data-aos="fade-right" data-aos-delay="100">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924.0299188656957!2d78.1134882!3d9.9228113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5860c336421%3A0x7735ed4f18cb344!2s404%2C%20N%20Masi%20St%2C%20Madurai%20Main%2C%20Madurai%2C%20Tamil%20Nadu%20625001!5e0!3m2!1sen!2sin!4v1738600321234!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-left" data-aos-delay="200">
                 <h3>Get in Touch</h3>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:megashyam24@gmail.com">megashyam24@gmail.com</a></p>
                 <p><i class="fas fa-phone"></i> +91-8072257300</p>
@@ -176,19 +231,23 @@
         </div>
     </section>
 
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-arrow-up"></i></button>
+
     <!-- Footer -->
-    <footer>
+    <footer data-aos="fade-up" data-aos-duration="1000">
         <div class="footer-content">
             <p>© 2025 Mega Shyam. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://www.instagram.com/mega___shyam" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/mega_shyam24" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.github.com/megashyam24" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mega-shyam-084480311" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mega___shyam" target="_blank" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/mega_shyam24" target="_blank" data-aos="zoom-in" data-aos-delay="150"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.github.com/megashyam24" target="_blank" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mega-shyam-084480311" target="_blank" data-aos="zoom-in" data-aos-delay="250"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
